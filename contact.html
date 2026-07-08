@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Sales | HalalX</title>
+  <!-- SEO Meta Tags & Keywords -->
+<meta name="description" content="Launch your Sharia-compliant digital asset exchange in weeks. HalalX provides enterprise-grade, white-label crypto exchange software with built-in Islamic finance screening.">
+<meta name="keywords" content="white label crypto exchange, halal trading platform, turnkey crypto exchange, sharia compliant exchange, cryptocurrency white label, start a crypto exchange, إنشاء منصة تداول, وايت ليبل منصة رقمية, تداول إسلامي">
+<meta name="author" content="HalalX Technologies">
+
+<!-- Open Graph / Social Media (ليظهر بشكل جميل عند مشاركة الرابط في واتساب وتويتر) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="HalalX | Enterprise White Label Exchange">
+<meta property="og:description" content="Launch your Sharia-compliant digital asset exchange in weeks.">
+<meta property="og:site_name" content="HalalX">
+<meta name="theme-color" content="#020617">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #020617; color: #f8fafc; line-height: 1.6; overflow-x: hidden; display: flex; flex-direction: column; min-height: 100vh; }
+    a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+    .bg-pattern { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-image: radial-gradient(circle at 50% 0%, rgba(30,58,138,0.2) 0%, transparent 60%), linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 100% 100%, 40px 40px, 40px 40px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    nav { position: fixed; top: 0; width: 100%; z-index: 50; background: rgba(2, 6, 23, 0.7); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .nav-content { height: 80px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; font-size: 24px; font-weight: 800; color: white; }
+    .logo-box { width: 40px; height: 40px; background: linear-gradient(135deg, #3b82f6, #06b6d4); border-radius: 12px; display: flex; align-items: center; justify-content: center; transform: rotate(12deg); margin-right: 12px; }
+    .logo-box span { transform: rotate(-12deg); font-size: 18px; color: white; font-weight: bold; }
+    .text-cyan { color: #06b6d4; }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: #94a3b8; }
+    .nav-links a:hover, .nav-links a.active { color: #06b6d4; }
+    .btn-neon { background: linear-gradient(90deg, #3b82f6, #06b6d4); color: white !important; padding: 10px 24px; border-radius: 50px; font-weight: 700; box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); display: block; border: none; cursor: pointer; text-align: center; }
+    .menu-toggle { background: none; border: none; color: white; cursor: pointer; display: none; }
+    .mobile-menu { position: absolute; top: 80px; left: 0; width: 100%; background: rgba(15, 23, 42, 0.98); border-top: 1px solid rgba(255,255,255,0.05); padding: 16px; flex-direction: column; display: none; }
+    .mobile-menu.show { display: flex; }
+    .mobile-menu a { padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #94a3b8; }
+    footer { padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); background: rgba(2, 6, 23, 0.8); margin-top: auto; }
+    footer p { color: #64748b; font-size: 14px; }
+    @media (max-width: 992px) { .nav-links { display: none; } .menu-toggle { display: block; } }
+
+    /* Page Specifics */
+    .contact-section { padding: 140px 0 60px; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 48px; max-width: 1000px; margin: 0 auto; align-items: center; }
+    .contact-info h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; line-height: 1.2; }
+    .contact-info p { color: #94a3b8; font-size: 1.1rem; margin-bottom: 40px; }
+    .info-item { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+    .info-icon { width: 48px; height: 48px; background: rgba(255,255,255,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #06b6d4; font-size: 20px;}
+    .info-text h4 { font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+    .info-text div { font-weight: 500; }
+    .contact-form-card { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 40px; backdrop-filter: blur(16px); }
+    .form-group { margin-bottom: 20px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .form-group label { display: block; font-size: 12px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .form-control { width: 100%; background: rgba(2, 6, 23, 0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 14px 16px; color: white; font-family: inherit; font-size: 14px; transition: all 0.3s; }
+    .form-control:focus { outline: none; border-color: #06b6d4; box-shadow: 0 0 0 1px #06b6d4; }
+    select.form-control { appearance: none; cursor: pointer; }
+    textarea.form-control { resize: vertical; min-height: 100px; }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } .contact-form-card { padding: 24px; } }
+  </style>
+</head>
+<body>
+  <div class="bg-pattern"></div>
+  <nav>
+    <div class="container nav-content">
+      <a href="index.html" class="logo"><div class="logo-box"><span>HX</span></div>Halal<span class="text-cyan">X</span></a>
+      <div class="nav-links">
+        <a href="index.html">Platform</a>
+        <a href="technology.html">Technology</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="active btn-neon" style="display:inline-flex;">Book Demo</a>
+      </div>
+      <button class="menu-toggle" onclick="document.getElementById('mobileMenu').classList.toggle('show')">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Platform</a>
+      <a href="technology.html">Technology</a>
+      <a href="compliance.html">Compliance</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="active">Contact Sales</a>
+    </div>
+  </nav>
+
+  <main class="container contact-section">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h1>Let's build your <span class="text-cyan">exchange.</span></h1>
+        <p>Fill out the form to generate a direct inquiry to our technical sales team. We typically respond within 24 hours.</p>
+        <div class="info-item">
+          <div class="info-icon">✉️</div>
+          <div class="info-text"><h4>Direct Email</h4><div>partnerships@halalx.io</div></div>
+        </div>
+      </div>
+      <div class="contact-form-card">
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label>Full Name</label><input type="text" id="f_name" required class="form-control" placeholder="John Doe"></div>
+            <div class="form-group"><label>Work Email</label><input type="email" id="f_email" required class="form-control" placeholder="john@company.com"></div>
+          </div>
+          <div class="form-group">
+            <label>Interested Plan</label>
+            <select id="f_plan" class="form-control">
+              <option>Starter ($8k - $15k)</option>
+              <option selected>Growth ($30k - $60k)</option>
+              <option>Enterprise ($80k+)</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Project Details</label><textarea id="f_notes" class="form-control" placeholder="Tell us about your target market..."></textarea></div>
+          <button type="submit" class="btn-neon" style="width: 100%;">Generate Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer><div class="container"><p>© 2026 HalalX Technologies. All rights reserved.</p></div></footer>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('f_name').value;
+      const email = document.getElementById('f_email').value;
+      const plan = document.getElementById('f_plan').value;
+      const notes = document.getElementById('f_notes').value;
+      const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APlan of Interest: ${plan}%0D%0ANotes: ${notes}`;
+      window.location.href = `mailto:partnerships@halalx.io?subject=White Label Inquiry - ${plan}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
+

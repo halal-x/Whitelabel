@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HalalX | Enterprise White Label Exchange</title>
+  <!-- SEO Meta Tags & Keywords -->
+<meta name="description" content="Launch your Sharia-compliant digital asset exchange in weeks. HalalX provides enterprise-grade, white-label crypto exchange software with built-in Islamic finance screening.">
+<meta name="keywords" content="white label crypto exchange, halal trading platform, turnkey crypto exchange, sharia compliant exchange, cryptocurrency white label, start a crypto exchange, إنشاء منصة تداول, وايت ليبل منصة رقمية, تداول إسلامي">
+<meta name="author" content="HalalX Technologies">
+
+<!-- Open Graph / Social Media (ليظهر بشكل جميل عند مشاركة الرابط في واتساب وتويتر) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="HalalX | Enterprise White Label Exchange">
+<meta property="og:description" content="Launch your Sharia-compliant digital asset exchange in weeks.">
+<meta property="og:site_name" content="HalalX">
+<meta name="theme-color" content="#020617">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #020617; color: #f8fafc; line-height: 1.6; overflow-x: hidden; display: flex; flex-direction: column; min-height: 100vh; }
+    a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+    .bg-pattern { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-image: radial-gradient(circle at 50% 0%, rgba(30,58,138,0.2) 0%, transparent 60%), linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 100% 100%, 40px 40px, 40px 40px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    nav { position: fixed; top: 0; width: 100%; z-index: 50; background: rgba(2, 6, 23, 0.7); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .nav-content { height: 80px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; font-size: 24px; font-weight: 800; color: white; }
+    .logo-box { width: 40px; height: 40px; background: linear-gradient(135deg, #3b82f6, #06b6d4); border-radius: 12px; display: flex; align-items: center; justify-content: center; transform: rotate(12deg); margin-right: 12px; }
+    .logo-box span { transform: rotate(-12deg); font-size: 18px; color: white; font-weight: bold; }
+    .text-cyan { color: #06b6d4; }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: #94a3b8; }
+    .nav-links a:hover, .nav-links a.active { color: #06b6d4; }
+    .btn-neon { background: linear-gradient(90deg, #3b82f6, #06b6d4); color: white !important; padding: 10px 24px; border-radius: 50px; font-weight: 700; box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); display: inline-flex; align-items: center; justify-content: center; border: none; cursor: pointer; }
+    .btn-neon:hover { box-shadow: 0 0 25px rgba(6, 182, 212, 0.8); transform: translateY(-2px); }
+    .btn-outline { border: 1px solid rgba(255,255,255,0.2); color: white; padding: 12px 28px; border-radius: 50px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; }
+    .btn-outline:hover { background: rgba(255,255,255,0.05); }
+    .menu-toggle { background: none; border: none; color: white; cursor: pointer; display: none; }
+    .mobile-menu { position: absolute; top: 80px; left: 0; width: 100%; background: rgba(15, 23, 42, 0.98); border-top: 1px solid rgba(255,255,255,0.05); padding: 16px; flex-direction: column; display: none; max-height: calc(100vh - 80px); overflow-y: auto; }
+    .mobile-menu.show { display: flex; }
+    .mobile-menu a { padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #94a3b8; }
+    .mobile-menu a.active { color: #06b6d4; }
+    footer { padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); background: rgba(2, 6, 23, 0.8); margin-top: auto; }
+    footer p { color: #64748b; font-size: 14px; }
+    @media (max-width: 992px) { .nav-links { display: none; } .menu-toggle { display: block; } }
+
+    /* Page Specifics */
+    .hero { padding: 160px 0 80px; text-align: center; max-width: 900px; margin: 0 auto; flex-grow: 1; }
+    .badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 50px; color: #06b6d4; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 32px; }
+    .hero h1 { font-size: 4.5rem; font-weight: 800; margin-bottom: 24px; line-height: 1.1; }
+    .hero-glow { color: transparent; background: linear-gradient(90deg, #10b981, #06b6d4); -webkit-background-clip: text; text-shadow: 0 0 30px rgba(6, 182, 212, 0.4); }
+    .hero p { font-size: 1.25rem; color: #94a3b8; max-width: 700px; margin: 0 auto 40px; }
+    .hero-btns { display: flex; justify-content: center; gap: 16px; }
+    .ticker-wrap { border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); background: rgba(15, 23, 42, 0.5); padding: 16px 0; overflow: hidden; }
+    .ticker { display: flex; width: max-content; animation: marquee 30s linear infinite; gap: 40px; }
+    .ticker-item { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; color: #cbd5e1; }
+    .ticker-dot { width: 8px; height: 8px; background: #10b981; border-radius: 50%; box-shadow: 0 0 10px #10b981; }
+    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    .features { padding: 100px 0; }
+    .section-title { text-align: center; margin-bottom: 60px; }
+    .section-title h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 16px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .card { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 32px; backdrop-filter: blur(16px); transition: all 0.3s; }
+    .card:hover { transform: translateY(-5px); border-color: rgba(6,182,212,0.3); }
+    .icon-box { width: 56px; height: 56px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: #06b6d4; }
+    .card h3 { font-size: 1.25rem; font-weight: 700; margin-bottom: 12px; }
+    .card p { color: #94a3b8; font-size: 0.95rem; }
+    @media (max-width: 768px) { .hero h1 { font-size: 2.5rem; } .grid-3 { grid-template-columns: 1fr; } .hero-btns { flex-direction: column; } .btn-neon, .btn-outline { width: 100%; } }
+  </style>
+</head>
+<body>
+  <div class="bg-pattern"></div>
+  <nav>
+    <div class="container nav-content">
+      <a href="index.html" class="logo"><div class="logo-box"><span>HX</span></div>Halal<span class="text-cyan">X</span></a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Platform</a>
+        <a href="technology.html">Technology</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="btn-neon">Book Demo</a>
+      </div>
+      <button class="menu-toggle" onclick="document.getElementById('mobileMenu').classList.toggle('show')">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="active">Platform</a>
+      <a href="technology.html">Technology</a>
+      <a href="compliance.html">Compliance</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact Sales</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="container hero">
+      <div class="badge">Enterprise White Label Solution</div>
+      <h1>Launch Your <span class="hero-glow">Halal Trading</span> Platform</h1>
+      <p>Enterprise-grade digital asset infrastructure. UI, matching engine, secure wallets, and built-in Sharia compliance screening. Launch your brand in weeks.</p>
+      <div class="hero-btns">
+        <a href="pricing.html" class="btn-neon">View Turnkey Plans</a>
+        <a href="contact.html" class="btn-outline">Talk to Architecture Team</a>
+      </div>
+    </section>
+
+    <div class="ticker-wrap"><div class="ticker" id="tickerTrack"></div></div>
+
+    <section class="container features">
+      <div class="section-title"><h2>Why Choose a <span class="text-cyan">White Label</span> Solution?</h2></div>
+      <div class="grid-3">
+        <div class="card"><div class="icon-box">🚀</div><h3>Rapid Go-To-Market</h3><p>Launch beta in weeks. Save millions in R&D and avoid the technical pitfalls of building complex systems.</p></div>
+        <div class="card"><div class="icon-box" style="color: #3b82f6;">⚙️</div><h3>Battle-Tested Infrastructure</h3><p>Our core engine processes thousands of transactions per second. Includes secure custody and admin panels.</p></div>
+        <div class="card"><div class="icon-box" style="color: #10b981;">🛡️</div><h3>Built-in Islamic Finance</h3><p>The only platform offering 'isHalal' screening protocols built into the asset listing engine.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container"><p>© 2026 HalalX Technologies. All rights reserved.</p></div></footer>
+  <script>
+    const items = ['BTC — Sharia Compliant', 'ETH — Sharia Compliant', 'USDT — Instant Settlement', 'Real-time Asset Screening', 'Institutional Matching Engine'];
+    document.getElementById('tickerTrack').innerHTML = items.map(i => `<div class="ticker-item"><div class="ticker-dot"></div>${i}</div>`).join('').repeat(4);
+  </script>
+</body>
+</html>
+
+

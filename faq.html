@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | HalalX</title>
+  <!-- SEO Meta Tags & Keywords -->
+<meta name="description" content="Launch your Sharia-compliant digital asset exchange in weeks. HalalX provides enterprise-grade, white-label crypto exchange software with built-in Islamic finance screening.">
+<meta name="keywords" content="white label crypto exchange, halal trading platform, turnkey crypto exchange, sharia compliant exchange, cryptocurrency white label, start a crypto exchange, إنشاء منصة تداول, وايت ليبل منصة رقمية, تداول إسلامي">
+<meta name="author" content="HalalX Technologies">
+
+<!-- Open Graph / Social Media (ليظهر بشكل جميل عند مشاركة الرابط في واتساب وتويتر) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="HalalX | Enterprise White Label Exchange">
+<meta property="og:description" content="Launch your Sharia-compliant digital asset exchange in weeks.">
+<meta property="og:site_name" content="HalalX">
+<meta name="theme-color" content="#020617">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #020617; color: #f8fafc; line-height: 1.6; overflow-x: hidden; display: flex; flex-direction: column; min-height: 100vh; }
+    a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+    .bg-pattern { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-image: radial-gradient(circle at 50% 0%, rgba(30,58,138,0.2) 0%, transparent 60%), linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 100% 100%, 40px 40px, 40px 40px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    nav { position: fixed; top: 0; width: 100%; z-index: 50; background: rgba(2, 6, 23, 0.7); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .nav-content { height: 80px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; font-size: 24px; font-weight: 800; color: white; }
+    .logo-box { width: 40px; height: 40px; background: linear-gradient(135deg, #3b82f6, #06b6d4); border-radius: 12px; display: flex; align-items: center; justify-content: center; transform: rotate(12deg); margin-right: 12px; }
+    .logo-box span { transform: rotate(-12deg); font-size: 18px; color: white; font-weight: bold; }
+    .text-cyan { color: #06b6d4; }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: #94a3b8; }
+    .nav-links a:hover, .nav-links a.active { color: #06b6d4; }
+    .btn-neon { background: linear-gradient(90deg, #3b82f6, #06b6d4); color: white !important; padding: 10px 24px; border-radius: 50px; font-weight: 700; box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); display: inline-flex; border: none; cursor: pointer; align-items: center; justify-content: center;}
+    .menu-toggle { background: none; border: none; color: white; cursor: pointer; display: none; }
+    .mobile-menu { position: absolute; top: 80px; left: 0; width: 100%; background: rgba(15, 23, 42, 0.98); border-top: 1px solid rgba(255,255,255,0.05); padding: 16px; flex-direction: column; display: none; }
+    .mobile-menu.show { display: flex; }
+    .mobile-menu a { padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #94a3b8; }
+    footer { padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); background: rgba(2, 6, 23, 0.8); margin-top: auto; }
+    footer p { color: #64748b; font-size: 14px; }
+    @media (max-width: 992px) { .nav-links { display: none; } .menu-toggle { display: block; } }
+
+    /* Page Specifics */
+    .page-header { padding: 140px 0 60px; text-align: center; }
+    .page-header h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 16px; }
+    .page-header p { color: #94a3b8; font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
+    
+    .faq-container { max-width: 800px; margin: 0 auto 80px; }
+    .faq-item { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; margin-bottom: 16px; overflow: hidden; backdrop-filter: blur(16px); }
+    .faq-question { padding: 24px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 1.1rem; color: white; user-select: none; }
+    .faq-question:hover { background: rgba(255,255,255,0.02); }
+    .faq-answer { padding: 0 24px 24px; color: #94a3b8; font-size: 1rem; display: none; line-height: 1.7; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 8px; padding-top: 24px; }
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .faq-question { color: #06b6d4; }
+    .icon-plus { font-size: 20px; transition: transform 0.3s; }
+    .faq-item.active .icon-plus { transform: rotate(45deg); }
+    @media (max-width: 768px) { .page-header h1 { font-size: 2.5rem; } }
+  </style>
+</head>
+<body>
+  <div class="bg-pattern"></div>
+  <nav>
+    <div class="container nav-content">
+      <a href="index.html" class="logo"><div class="logo-box"><span>HX</span></div>Halal<span class="text-cyan">X</span></a>
+      <div class="nav-links">
+        <a href="index.html">Platform</a>
+        <a href="technology.html">Technology</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html" class="active">FAQ</a>
+        <a href="contact.html" class="btn-neon">Book Demo</a>
+      </div>
+      <button class="menu-toggle" onclick="document.getElementById('mobileMenu').classList.toggle('show')">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Platform</a>
+      <a href="technology.html">Technology</a>
+      <a href="compliance.html">Compliance</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html" class="active">FAQ</a>
+      <a href="contact.html">Contact Sales</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Frequently Asked <span class="text-cyan">Questions</span></h1>
+      <p>Find answers to common questions about our white-label solution, licensing, and compliance.</p>
+    </div>
+
+    <div class="faq-container">
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">Does HalalX provide legal or regulatory licenses? <span class="icon-plus">+</span></div>
+        <div class="faq-answer">No. HalalX provides the software infrastructure (SaaS) only. Obtaining the necessary financial or Virtual Asset Service Provider (VASP) licenses in your target country is entirely your responsibility as the operating entity.</div>
+      </div>
+      
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">How long does it take to launch? <span class="icon-plus">+</span></div>
+        <div class="faq-answer">Depending on the plan and customization required, a beta staging environment can be ready in 3 to 4 weeks. Full mainnet launch usually takes 6 to 8 weeks after final configurations and KYC integrations.</div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">Do you provide liquidity for the exchange? <span class="icon-plus">+</span></div>
+        <div class="faq-answer">Yes, we provide institutional-grade liquidity bridges (via API) to top global exchanges (e.g., Binance, Kraken) to ensure your order books are deep and active from day one, while strictly maintaining spot-only execution rules.</div>
+      </div>
+
+      <div class="faq-item" onclick="this.classList.toggle('active')">
+        <div class="faq-question">Can we add our own custom coin or token? <span class="icon-plus">+</span></div>
+        <div class="faq-answer">Yes, you can list your custom ERC-20, BEP-20, or native tokens. However, to maintain the platform's integrity, our compliance team must verify that the token's utility does not violate Islamic finance principles before integrating it into the main engine.</div>
+      </div>
+    </div>
+  </main>
+
+  <footer><div class="container"><p>© 2026 HalalX Technologies. All rights reserved.</p></div></footer>
+</body>
+</html>
+

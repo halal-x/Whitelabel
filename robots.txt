@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# أضف رابط خريطة الموقع الخاص بك هنا بعد رفع الموقع
+Sitemap: https://yourusername.github.io/HalalX/sitemap.xml

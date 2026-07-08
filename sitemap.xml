@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://yourusername.github.io/HalalX/index.html</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <!-- صفحة الباقات -->
+  <url>
+    <loc>https://yourusername.github.io/HalalX/pricing.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- صفحة الامتثال الشرعي -->
+  <url>
+    <loc>https://yourusername.github.io/HalalX/compliance.html</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- صفحة التكنولوجيا -->
+  <url>
+    <loc>https://yourusername.github.io/HalalX/technology.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- صفحة من نحن -->
+  <url>
+    <loc>https://yourusername.github.io/HalalX/about.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- صفحة الأسئلة الشائعة -->
+  <url>
+    <loc>https://yourusername.github.io/HalalX/faq.html</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- صفحة التواصل -->
+  <url>
+    <loc>https://yourusername.github.io/HalalX/contact.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>
+
