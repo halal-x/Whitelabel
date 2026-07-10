@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | HalalX</title>
+  
+  <meta name="description" content="Terms of Service and legal agreements for using HalalX white-label exchange software infrastructure.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #020617; color: #f8fafc; line-height: 1.6; overflow-x: hidden; display: flex; flex-direction: column; min-height: 100vh; }
+    a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+    .bg-pattern { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-image: radial-gradient(circle at 50% 0%, rgba(30,58,138,0.2) 0%, transparent 60%), linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 100% 100%, 40px 40px, 40px 40px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    nav { position: fixed; top: 0; width: 100%; z-index: 50; background: rgba(2, 6, 23, 0.7); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .nav-content { height: 80px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; font-size: 24px; font-weight: 800; color: white; }
+    .logo-box { width: 40px; height: 40px; background: linear-gradient(135deg, #3b82f6, #06b6d4); border-radius: 12px; display: flex; align-items: center; justify-content: center; transform: rotate(12deg); margin-right: 12px; }
+    .logo-box span { transform: rotate(-12deg); font-size: 18px; color: white; font-weight: bold; }
+    .text-cyan { color: #06b6d4; }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: #94a3b8; }
+    .nav-links a:hover, .nav-links a.active { color: #06b6d4; }
+    .btn-neon { background: linear-gradient(90deg, #3b82f6, #06b6d4); color: white !important; padding: 10px 24px; border-radius: 50px; font-weight: 700; box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); display: inline-flex; border: none; cursor: pointer; align-items: center; justify-content: center;}
+    .menu-toggle { background: none; border: none; color: white; cursor: pointer; display: none; }
+    .mobile-menu { position: absolute; top: 80px; left: 0; width: 100%; background: rgba(15, 23, 42, 0.98); border-top: 1px solid rgba(255,255,255,0.05); padding: 16px; flex-direction: column; display: none; }
+    .mobile-menu.show { display: flex; }
+    .mobile-menu a { padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #94a3b8; }
+    
+    footer { padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); background: rgba(2, 6, 23, 0.8); margin-top: auto; }
+    footer p { color: #64748b; font-size: 14px; margin-bottom: 12px;}
+    .footer-links { display: flex; justify-content: center; gap: 24px; }
+    .footer-links a { color: #64748b; font-size: 12px; transition: color 0.3s; }
+    .footer-links a:hover { color: #06b6d4; }
+
+    @media (max-width: 992px) { .nav-links { display: none; } .menu-toggle { display: block; } }
+
+    /* Legal Page Specifics */
+    .legal-content { padding: 140px 0 80px; max-width: 800px; margin: 0 auto; }
+    .legal-content h1 { font-size: 3rem; font-weight: 800; margin-bottom: 8px; }
+    .legal-content .last-updated { color: #06b6d4; font-size: 0.9rem; margin-bottom: 40px; font-weight: 600; }
+    .legal-box { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 40px; backdrop-filter: blur(16px); }
+    .legal-box h2 { font-size: 1.5rem; color: white; margin-top: 32px; margin-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;}
+    .legal-box h2:first-child { margin-top: 0; }
+    .legal-box p { color: #94a3b8; font-size: 1rem; margin-bottom: 16px; line-height: 1.8; }
+    .legal-box ul { color: #94a3b8; margin-bottom: 16px; padding-left: 20px; line-height: 1.8;}
+    .legal-box li { margin-bottom: 8px; }
+    @media (max-width: 768px) { .legal-content h1 { font-size: 2rem; } .legal-box { padding: 24px; } }
+  </style>
+</head>
+<body>
+  <div class="bg-pattern"></div>
+  <nav>
+    <div class="container nav-content">
+      <a href="index.html" class="logo"><div class="logo-box"><span>HX</span></div>Halal<span class="text-cyan">X</span></a>
+      <div class="nav-links">
+        <a href="index.html">Platform</a>
+        <a href="technology.html">Technology</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="btn-neon">Book Demo</a>
+      </div>
+      <button class="menu-toggle" onclick="document.getElementById('mobileMenu').classList.toggle('show')">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Platform</a>
+      <a href="technology.html">Technology</a>
+      <a href="compliance.html">Compliance</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact Sales</a>
+    </div>
+  </nav>
+
+  <main class="container legal-content">
+    <h1>Terms of Service</h1>
+    <div class="last-updated">Last Updated: October 2026</div>
+
+    <div class="legal-box">
+      <h2>1. Introduction</h2>
+      <p>These Terms of Service ("Terms") govern your use of the HalalX Technologies website and our white-label software-as-a-service (SaaS) offerings. By accessing our website or purchasing our services, you agree to be bound by these Terms.</p>
+
+      <h2>2. Nature of Service</h2>
+      <p>HalalX Technologies provides software infrastructure for digital asset exchanges. <strong>We do not provide financial, investment, legal, or regulatory advice.</strong> We are a technology provider, not a broker, exchange, or custodian for end-users.</p>
+
+      <h2>3. Regulatory Compliance & Licensing</h2>
+      <ul>
+        <li>The client (the entity licensing our software) is solely responsible for obtaining any required Virtual Asset Service Provider (VASP), financial, or money transmitter licenses in their operating jurisdictions.</li>
+        <li>The client is responsible for conducting their own KYC (Know Your Customer) and AML (Anti-Money Laundering) checks on their end-users.</li>
+        <li>HalalX holds no liability for the client's failure to comply with local or international financial laws.</li>
+      </ul>
+
+      <h2>4. Sharia Compliance</h2>
+      <p>While our "isHalal" protocol is designed in consultation with Islamic finance principles to filter out non-compliant assets and restrict margin trading, HalalX does not issue official Fatwas or Sharia Certificates. It is the client's responsibility to attain official certification from a recognized Sharia board if required by their jurisdiction or marketing strategy.</p>
+
+      <h2>5. Intellectual Property</h2>
+      <p>All core engine code, backend infrastructure, and proprietary algorithms remain the exclusive intellectual property of HalalX Technologies. Clients are granted a limited, non-exclusive license to use the software as a service under their own brand.</p>
+
+      <h2>6. Limitation of Liability</h2>
+      <p>HalalX shall not be liable for any indirect, incidental, special, consequential or punitive damages, including loss of profits, data, or goodwill, arising from the use of our software, market volatility, or third-party liquidity provider failures.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 HalalX Technologies. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="terms.html" style="color: #06b6d4;">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
