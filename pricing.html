@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pricing & Plans | HalalX</title>
+  
+  <meta name="description" content="View our flexible white-label crypto exchange pricing plans. From Starter to Enterprise and Custom Investor packages.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -27,18 +39,19 @@
     .mobile-menu { position: absolute; top: 80px; left: 0; width: 100%; background: rgba(15, 23, 42, 0.98); border-top: 1px solid rgba(255,255,255,0.05); padding: 16px; flex-direction: column; display: none; }
     .mobile-menu.show { display: flex; }
     .mobile-menu a { padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #94a3b8; }
+    
     footer { padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); background: rgba(2, 6, 23, 0.8); margin-top: auto; }
-    footer p { color: #64748b; font-size: 14px; }
+    footer p { color: #64748b; font-size: 14px; margin-bottom: 12px;}
+    .footer-links { display: flex; justify-content: center; gap: 24px; }
+    .footer-links a { color: #64748b; font-size: 12px; transition: color 0.3s; }
+    .footer-links a:hover { color: #06b6d4; }
+
     @media (max-width: 992px) { .nav-links { display: none; } .menu-toggle { display: block; } }
 
-    /* Page Specifics - Updated for 4 Columns */
     .page-header { padding: 140px 0 60px; text-align: center; }
     .page-header h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 16px; }
     .page-header p { color: #94a3b8; font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
-    
-    /* Changed to 4 columns */
     .pricing-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto 80px; }
-    
     .pricing-card { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 32px 24px; display: flex; flex-direction: column; position: relative; backdrop-filter: blur(16px); }
     .pricing-popular { border-color: rgba(6,182,212,0.4); box-shadow: 0 0 30px rgba(6,182,212,0.15); transform: scale(1.05); z-index: 2; }
     .popular-badge { position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); background: linear-gradient(90deg, #3b82f6, #06b6d4); padding: 6px 16px; border-radius: 50px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: white; white-space: nowrap; }
@@ -50,8 +63,6 @@
     .plan-features li { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 16px; font-size: 0.9rem; color: #e2e8f0; }
     .check-icon { color: #10b981; font-weight: bold; }
     .x-icon { color: #64748b; font-weight: bold; }
-    
-    /* Responsive grid adjustments */
     @media (max-width: 1100px) { .pricing-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 24px; } .pricing-popular { transform: scale(1); } }
     @media (max-width: 768px) { .page-header h1 { font-size: 2.5rem; } .pricing-grid { grid-template-columns: 1fr; } }
   </style>
@@ -90,11 +101,10 @@
     </div>
 
     <div class="pricing-grid">
-      <!-- 1. Starter -->
       <div class="pricing-card">
         <div class="plan-name">Starter</div>
         <div class="plan-price">$8k <span>- $15k</span></div>
-        <p class="plan-desc">+ $900/mo OPEX. Perfect for local market validation.</p>
+        <p class="plan-desc">+ $900/mo OPEX. Perfect for local validation.</p>
         <ul class="plan-features">
           <li><span class="check-icon">✔</span> Web App & Dashboard</li>
           <li><span class="check-icon">✔</span> Simplified Spot Trading</li>
@@ -104,7 +114,6 @@
         <a href="contact.html" class="btn-outline">Request Starter</a>
       </div>
 
-      <!-- 2. Growth -->
       <div class="pricing-card pricing-popular">
         <div class="popular-badge">Most Popular</div>
         <div class="plan-name">Growth</div>
@@ -119,7 +128,6 @@
         <a href="contact.html" class="btn-neon" style="padding:12px;">Deploy Growth Stack</a>
       </div>
 
-      <!-- 3. Enterprise -->
       <div class="pricing-card">
         <div class="plan-name" style="color:#3b82f6;">Enterprise</div>
         <div class="plan-price">$80k+ <span>setup</span></div>
@@ -133,11 +141,10 @@
         <a href="contact.html" class="btn-outline">Contact Sales</a>
       </div>
 
-      <!-- 4. Custom / Investor (New) -->
       <div class="pricing-card" style="border-color: rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.03);">
         <div class="plan-name" style="color:#10b981;">Investor / Custom</div>
         <div class="plan-price">Custom</div>
-        <p class="plan-desc">For institutional investors and strategic partnerships. Propose your terms.</p>
+        <p class="plan-desc">For institutional investors and strategic partnerships.</p>
         <ul class="plan-features">
           <li><span class="check-icon">✔</span> Tailored Architecture</li>
           <li><span class="check-icon">✔</span> Equity / Partnership Options</li>
@@ -149,7 +156,15 @@
     </div>
   </main>
 
-  <footer><div class="container"><p>© 2026 HalalX Technologies. All rights reserved.</p></div></footer>
+  <footer>
+    <div class="container">
+      <p>© 2026 HalalX Technologies. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
 
