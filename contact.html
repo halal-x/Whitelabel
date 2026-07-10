@@ -4,18 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Sales | HalalX</title>
-  <!-- SEO Meta Tags & Keywords -->
-<meta name="description" content="Launch your Sharia-compliant digital asset exchange in weeks. HalalX provides enterprise-grade, white-label crypto exchange software with built-in Islamic finance screening.">
-<meta name="keywords" content="white label crypto exchange, halal trading platform, turnkey crypto exchange, sharia compliant exchange, cryptocurrency white label, start a crypto exchange, إنشاء منصة تداول, وايت ليبل منصة رقمية, تداول إسلامي">
-<meta name="author" content="HalalX Technologies">
-
-<!-- Open Graph / Social Media (ليظهر بشكل جميل عند مشاركة الرابط في واتساب وتويتر) -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="HalalX | Enterprise White Label Exchange">
-<meta property="og:description" content="Launch your Sharia-compliant digital asset exchange in weeks.">
-<meta property="og:site_name" content="HalalX">
-<meta name="theme-color" content="#020617">
-
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -49,7 +37,7 @@
     .info-item { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
     .info-icon { width: 48px; height: 48px; background: rgba(255,255,255,0.05); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #06b6d4; font-size: 20px;}
     .info-text h4 { font-size: 12px; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-    .info-text div { font-weight: 500; }
+    .info-text div { font-weight: 500; font-size: 15px; }
     .contact-form-card { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 40px; backdrop-filter: blur(16px); }
     .form-group { margin-bottom: 20px; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
@@ -57,6 +45,7 @@
     .form-control { width: 100%; background: rgba(2, 6, 23, 0.5); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 14px 16px; color: white; font-family: inherit; font-size: 14px; transition: all 0.3s; }
     .form-control:focus { outline: none; border-color: #06b6d4; box-shadow: 0 0 0 1px #06b6d4; }
     select.form-control { appearance: none; cursor: pointer; }
+    select.form-control option { background: #0f172a; color: white; }
     textarea.form-control { resize: vertical; min-height: 100px; }
     @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } .contact-form-card { padding: 24px; } }
   </style>
@@ -95,7 +84,11 @@
         <p>Fill out the form to generate a direct inquiry to our technical sales team. We typically respond within 24 hours.</p>
         <div class="info-item">
           <div class="info-icon">✉️</div>
-          <div class="info-text"><h4>Direct Email</h4><div>halalx20201@gmail.com</div></div>
+          <div class="info-text">
+            <h4>Direct Email</h4>
+            <!-- تم تحديث الإيميل هنا ليكون ظاهراً للمستخدم -->
+            <div>halalx20201@gmail.com</div>
+          </div>
         </div>
       </div>
       <div class="contact-form-card">
@@ -110,9 +103,11 @@
               <option>Starter ($8k - $15k)</option>
               <option selected>Growth ($30k - $60k)</option>
               <option>Enterprise ($80k+)</option>
+              <!-- تمت إضافة الخيار الرابع هنا -->
+              <option>Custom / Investor (Propose Terms)</option>
             </select>
           </div>
-          <div class="form-group"><label>Project Details</label><textarea id="f_notes" class="form-control" placeholder="Tell us about your target market..."></textarea></div>
+          <div class="form-group"><label>Project Details / Your Proposal</label><textarea id="f_notes" class="form-control" placeholder="Tell us about your target market or proposal..."></textarea></div>
           <button type="submit" class="btn-neon" style="width: 100%;">Generate Inquiry</button>
         </form>
       </div>
@@ -120,6 +115,7 @@
   </main>
 
   <footer><div class="container"><p>© 2026 HalalX Technologies. All rights reserved.</p></div></footer>
+  
   <script>
     document.getElementById('contactForm').addEventListener('submit', function(e){
       e.preventDefault();
@@ -128,9 +124,12 @@
       const plan = document.getElementById('f_plan').value;
       const notes = document.getElementById('f_notes').value;
       const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APlan of Interest: ${plan}%0D%0ANotes: ${notes}`;
-      window.location.href = `mailto:partnerships@halalx.io?subject=White Label Inquiry - ${plan}&body=${body}`;
+      
+      // تم تحديث الإيميل البرمجي هنا ليرسل الرسائل مباشرة إلى إيميلك
+      window.location.href = `mailto:halalx20201@gmail.com?subject=HalalX Inquiry - ${plan}&body=${body}`;
     });
   </script>
 </body>
 </html>
+
 
