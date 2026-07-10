@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Sales | HalalX</title>
+  
+  <meta name="description" content="Contact the HalalX team to request a demo or inquire about our enterprise white-label exchange plans.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -25,8 +37,13 @@
     .mobile-menu { position: absolute; top: 80px; left: 0; width: 100%; background: rgba(15, 23, 42, 0.98); border-top: 1px solid rgba(255,255,255,0.05); padding: 16px; flex-direction: column; display: none; }
     .mobile-menu.show { display: flex; }
     .mobile-menu a { padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #94a3b8; }
+    
     footer { padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); background: rgba(2, 6, 23, 0.8); margin-top: auto; }
-    footer p { color: #64748b; font-size: 14px; }
+    footer p { color: #64748b; font-size: 14px; margin-bottom: 12px;}
+    .footer-links { display: flex; justify-content: center; gap: 24px; }
+    .footer-links a { color: #64748b; font-size: 12px; transition: color 0.3s; }
+    .footer-links a:hover { color: #06b6d4; }
+
     @media (max-width: 992px) { .nav-links { display: none; } .menu-toggle { display: block; } }
 
     /* Page Specifics */
@@ -86,7 +103,6 @@
           <div class="info-icon">✉️</div>
           <div class="info-text">
             <h4>Direct Email</h4>
-            <!-- تم تحديث الإيميل هنا ليكون ظاهراً للمستخدم -->
             <div>halalx20201@gmail.com</div>
           </div>
         </div>
@@ -103,7 +119,6 @@
               <option>Starter ($8k - $15k)</option>
               <option selected>Growth ($30k - $60k)</option>
               <option>Enterprise ($80k+)</option>
-              <!-- تمت إضافة الخيار الرابع هنا -->
               <option>Custom / Investor (Propose Terms)</option>
             </select>
           </div>
@@ -114,7 +129,15 @@
     </div>
   </main>
 
-  <footer><div class="container"><p>© 2026 HalalX Technologies. All rights reserved.</p></div></footer>
+  <footer>
+    <div class="container">
+      <p>© 2026 HalalX Technologies. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
   
   <script>
     document.getElementById('contactForm').addEventListener('submit', function(e){
@@ -125,7 +148,6 @@
       const notes = document.getElementById('f_notes').value;
       const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APlan of Interest: ${plan}%0D%0ANotes: ${notes}`;
       
-      // تم تحديث الإيميل البرمجي هنا ليرسل الرسائل مباشرة إلى إيميلك
       window.location.href = `mailto:halalx20201@gmail.com?subject=HalalX Inquiry - ${plan}&body=${body}`;
     });
   </script>
