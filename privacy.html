@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | HalalX</title>
+  
+  <meta name="description" content="Privacy Policy for HalalX Technologies. Learn how we collect, use, and protect your data.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #020617; color: #f8fafc; line-height: 1.6; overflow-x: hidden; display: flex; flex-direction: column; min-height: 100vh; }
+    a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+    .bg-pattern { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-image: radial-gradient(circle at 50% 0%, rgba(30,58,138,0.2) 0%, transparent 60%), linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 100% 100%, 40px 40px, 40px 40px; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    nav { position: fixed; top: 0; width: 100%; z-index: 50; background: rgba(2, 6, 23, 0.7); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .nav-content { height: 80px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; font-size: 24px; font-weight: 800; color: white; }
+    .logo-box { width: 40px; height: 40px; background: linear-gradient(135deg, #3b82f6, #06b6d4); border-radius: 12px; display: flex; align-items: center; justify-content: center; transform: rotate(12deg); margin-right: 12px; }
+    .logo-box span { transform: rotate(-12deg); font-size: 18px; color: white; font-weight: bold; }
+    .text-cyan { color: #06b6d4; }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: #94a3b8; }
+    .nav-links a:hover, .nav-links a.active { color: #06b6d4; }
+    .btn-neon { background: linear-gradient(90deg, #3b82f6, #06b6d4); color: white !important; padding: 10px 24px; border-radius: 50px; font-weight: 700; box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); display: inline-flex; border: none; cursor: pointer; align-items: center; justify-content: center;}
+    .menu-toggle { background: none; border: none; color: white; cursor: pointer; display: none; }
+    .mobile-menu { position: absolute; top: 80px; left: 0; width: 100%; background: rgba(15, 23, 42, 0.98); border-top: 1px solid rgba(255,255,255,0.05); padding: 16px; flex-direction: column; display: none; }
+    .mobile-menu.show { display: flex; }
+    .mobile-menu a { padding: 16px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #94a3b8; }
+    
+    footer { padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); background: rgba(2, 6, 23, 0.8); margin-top: auto; }
+    footer p { color: #64748b; font-size: 14px; margin-bottom: 12px;}
+    .footer-links { display: flex; justify-content: center; gap: 24px; }
+    .footer-links a { color: #64748b; font-size: 12px; transition: color 0.3s; }
+    .footer-links a:hover { color: #06b6d4; }
+
+    @media (max-width: 992px) { .nav-links { display: none; } .menu-toggle { display: block; } }
+
+    /* Legal Page Specifics */
+    .legal-content { padding: 140px 0 80px; max-width: 800px; margin: 0 auto; }
+    .legal-content h1 { font-size: 3rem; font-weight: 800; margin-bottom: 8px; }
+    .legal-content .last-updated { color: #06b6d4; font-size: 0.9rem; margin-bottom: 40px; font-weight: 600; }
+    .legal-box { background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 40px; backdrop-filter: blur(16px); }
+    .legal-box h2 { font-size: 1.5rem; color: white; margin-top: 32px; margin-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;}
+    .legal-box h2:first-child { margin-top: 0; }
+    .legal-box p { color: #94a3b8; font-size: 1rem; margin-bottom: 16px; line-height: 1.8; }
+    .legal-box ul { color: #94a3b8; margin-bottom: 16px; padding-left: 20px; line-height: 1.8;}
+    .legal-box li { margin-bottom: 8px; }
+    @media (max-width: 768px) { .legal-content h1 { font-size: 2rem; } .legal-box { padding: 24px; } }
+  </style>
+</head>
+<body>
+  <div class="bg-pattern"></div>
+  <nav>
+    <div class="container nav-content">
+      <a href="index.html" class="logo"><div class="logo-box"><span>HX</span></div>Halal<span class="text-cyan">X</span></a>
+      <div class="nav-links">
+        <a href="index.html">Platform</a>
+        <a href="technology.html">Technology</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About Us</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html" class="btn-neon">Book Demo</a>
+      </div>
+      <button class="menu-toggle" onclick="document.getElementById('mobileMenu').classList.toggle('show')">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Platform</a>
+      <a href="technology.html">Technology</a>
+      <a href="compliance.html">Compliance</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact Sales</a>
+    </div>
+  </nav>
+
+  <main class="container legal-content">
+    <h1>Privacy Policy</h1>
+    <div class="last-updated">Last Updated: October 2026</div>
+
+    <div class="legal-box">
+      <h2>1. Information We Collect</h2>
+      <p>When you use HalalX Technologies' website or contact our sales team, we may collect the following information:</p>
+      <ul>
+        <li><strong>Personal Information:</strong> Name, email address, company name, and any details you provide in your communications with us.</li>
+        <li><strong>Usage Data:</strong> We use Google Analytics to collect anonymous data about how visitors interact with our website (e.g., pages visited, time spent, location).</li>
+      </ul>
+
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the collected information strictly for B2B communication and service improvement:</p>
+      <ul>
+        <li>To respond to your inquiries regarding our white-label solutions.</li>
+        <li>To send technical proposals, pricing details, and project timelines.</li>
+        <li>To analyze website traffic and improve user experience.</li>
+      </ul>
+
+      <h2>3. Data Sharing & Security</h2>
+      <p><strong>We do not sell, rent, or trade your personal information to third parties.</strong> All data is stored securely. Your inquiries are handled directly by our internal technical sales team. We implement industry-standard security measures to protect your data from unauthorized access.</p>
+
+      <h2>4. End-User Data (For our Clients)</h2>
+      <p>HalalX provides the software infrastructure to our clients. We do not directly collect, process, or store the personal data (including KYC documents) of the end-users who trade on our clients' exchanges. Data privacy compliance for end-users is the sole responsibility of the client operating the exchange.</p>
+
+      <h2>5. Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy or the data we hold, please contact us at <strong>halalx20201@gmail.com</strong>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 HalalX Technologies. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html" style="color: #06b6d4;">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
